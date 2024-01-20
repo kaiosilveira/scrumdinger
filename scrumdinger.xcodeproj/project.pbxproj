@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37581C512B5BCD500061AC63 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37581C502B5BCD500061AC63 /* DetailView.swift */; };
+		37581C532B5C21AD0061AC63 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37581C522B5C21AD0061AC63 /* DetailEditView.swift */; };
 		376BFF982B3EE34A009E29DE /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BFF972B3EE34A009E29DE /* ScrumdingerApp.swift */; };
 		376BFF9A2B3EE34A009E29DE /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BFF992B3EE34A009E29DE /* MeetingView.swift */; };
 		376BFF9C2B3EE34B009E29DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376BFF9B2B3EE34B009E29DE /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		37581C502B5BCD500061AC63 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		37581C522B5C21AD0061AC63 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		376BFF942B3EE34A009E29DE /* scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376BFF972B3EE34A009E29DE /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		376BFF992B3EE34A009E29DE /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				376BFF9D2B3EE34B009E29DE /* scrumdinger.entitlements */,
 				376BFF9E2B3EE34B009E29DE /* Preview Content */,
 				37581C502B5BCD500061AC63 /* DetailView.swift */,
+				37581C522B5C21AD0061AC63 /* DetailEditView.swift */,
 			);
 			path = scrumdinger;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				376BFFC62B3EF512009E29DE /* DailyScrum.swift in Sources */,
 				37581C512B5BCD500061AC63 /* DetailView.swift in Sources */,
+				37581C532B5C21AD0061AC63 /* DetailEditView.swift in Sources */,
 				376BFFCA2B3F0F16009E29DE /* TrailingIconLabelStyle.swift in Sources */,
 				376BFFC42B3EF41E009E29DE /* Theme.swift in Sources */,
 				376BFFCC2B3F1190009E29DE /* ScrumsView.swift in Sources */,
