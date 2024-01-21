@@ -1,9 +1,6 @@
-//
-//  DetailEditView.swift
-//  scrumdinger
-//
-//  Created by Kaio Silveira on 20/01/2024.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
@@ -13,14 +10,10 @@ struct DetailEditView: View {
 
     var body: some View {
         Form {
-            Section(header: Text("Meeting info")) {
+            Section(header: Text("Meeting Info")) {
                 TextField("Title", text: $scrum.title)
                 HStack {
-                    Slider(
-                        value: $scrum.lengthInMinutesAsDouble,
-                        in: 5...30,
-                        step: 1
-                    ) {
+                    Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1) {
                         Text("Length")
                     }
                     .accessibilityValue("\(scrum.lengthInMinutes) minutes")
@@ -56,6 +49,8 @@ struct DetailEditView: View {
     }
 }
 
-#Preview {
-    DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
+struct DetailEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
+    }
 }

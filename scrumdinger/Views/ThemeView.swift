@@ -1,15 +1,12 @@
-//
-//  ThemeView.swift
-//  scrumdinger
-//
-//  Created by Kaio Silveira on 21/01/2024.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
 struct ThemeView: View {
     let theme: Theme
-
+    
     var body: some View {
         Text(theme.name)
             .padding(4)
@@ -20,6 +17,8 @@ struct ThemeView: View {
     }
 }
 
-#Preview {
-    ThemeView(theme: .buttercup)
+struct ThemeView_Previews: PreviewProvider {
+    static var previews: some View {
+        ThemeView(theme: .buttercup)
+    }
 }
