@@ -1,16 +1,13 @@
-//
-//  ErrorView.swift
-//  Scrumdinger
-//
-//  Created by Kaio Silveira on 21/01/2024.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
 struct ErrorView: View {
     let errorWrapper: ErrorWrapper
     @Environment(\.dismiss) private var dismiss
-
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -38,18 +35,16 @@ struct ErrorView: View {
     }
 }
 
-struct ErrorView_Previews : PreviewProvider {
-    enum SampleError : Error {
+struct ErrorView_Previews: PreviewProvider {
+    enum SampleError: Error {
         case errorRequired
     }
-
+    
     static var wrapper: ErrorWrapper {
-        ErrorWrapper(
-            error: SampleError.errorRequired,
-            guidance: "You can safely ignore this error."
-        )
+        ErrorWrapper(error: SampleError.errorRequired,
+                     guidance: "You can safely ignore this error.")
     }
-
+    
     static var previews: some View {
         ErrorView(errorWrapper: wrapper)
     }

@@ -27,15 +27,12 @@ struct ScrumsView: View {
                 }
                 .accessibilityLabel("New Scrum")
             }
-            .sheet(isPresented: $isPresentingNewScrumView) {
-                NewScrumSheet(
-                    scrums: $scrums,
-                    isPresentingNewScrumView: $isPresentingNewScrumView
-                )
-            }
-            .onChange(of: scenePhase) { phase in
-                if phase == .inactive { saveAction() }
-            }
+        }
+        .sheet(isPresented: $isPresentingNewScrumView) {
+            NewScrumSheet(scrums: $scrums, isPresentingNewScrumView: $isPresentingNewScrumView)
+        }
+        .onChange(of: scenePhase) { phase in
+            if phase == .inactive { saveAction() }
         }
     }
 }
