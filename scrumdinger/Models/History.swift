@@ -8,10 +8,15 @@ struct History: Identifiable, Codable {
     let id: UUID
     let date: Date
     var attendees: [DailyScrum.Attendee]
-    
-    init(id: UUID = UUID(), date: Date = Date(), attendees: [DailyScrum.Attendee]) {
+    let transcript: String?
+    var attendeeString: String {
+        attendees.map { $0.name }.joined(separator: ", ")
+    }
+
+    init(id: UUID = UUID(), date: Date = Date(), attendees: [DailyScrum.Attendee], transcript: String? = nil) {
         self.id = id
         self.date = date
         self.attendees = attendees
+        self.transcript = transcript
     }
 }
